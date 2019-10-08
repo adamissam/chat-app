@@ -1,12 +1,13 @@
 import React from 'react';
 //import logo from './logo.svg';
 //import './App.css';
-import Chat from './components/Chat'
+//import Chat from './components/Chat'
+import ContactList from './components/ContactList'
 
 function App() {
   return (
     <div className="App">
-      <Chat image='https://randomuser.me/api/portraits/women/75.jpg' 
+      {/* <Chat image='https://randomuser.me/api/portraits/women/75.jpg' 
       name='Beverly Jimenez'
       text= {false}
       />
@@ -17,7 +18,8 @@ function App() {
       <Chat image='https://randomuser.me/api/portraits/women/50.jpg' 
       name='Bella Jones'
       text= {false}
-      />
+      /> */}
+      <ContactList/>
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Chat(props) {
         <img src={props.image} alt={props.name} className='avatar' />
         <div>
             <div className='name'>
-                {props.name}
+                {props.name.toUpperCase()}
             </div>
             <div className='status'>
                 <div className={props.text ? 'status-online' : 'status-offline'}></div>
