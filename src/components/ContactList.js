@@ -6,37 +6,38 @@ const contactlist = [
     {
         image : 'https://randomuser.me/api/portraits/women/5.jpg',
         name : 'Mia Palmer',
-        text : true
+        online : true
     },
     {
         image : 'https://randomuser.me/api/portraits/women/85.jpg',
         name : 'Christine Roberts',
-        text : false
+        online : false
     },
     {
         image : 'https://randomuser.me/api/portraits/men/49.jpg',
         name : 'Christopher Duncan',
-        text : true
+        online : true
     },
     {
         image : 'https://randomuser.me/api/portraits/women/77.jpg',
         name : 'Emma Young',
-        text : true
+        online : true
     },
     {
         image : 'https://randomuser.me/api/portraits/men/20.jpg',
         name : 'Marion Hart',
-        text :false
+        online :false
     }
 
 ]
 
-const ContactList = () =>{
-    return  <div>
-        {contactlist.map(item =>{
-        return <Chat image={item.image} name={item.name} text={item.text}/> })}
+const ContactList = () =>(
+     <div>
+        {contactlist.map(item =>(
+        <Chat image={item.image} name={item.name} online={item.online}/> ))}
     </div>
    
-}
+)
+
 
 export default ContactList
